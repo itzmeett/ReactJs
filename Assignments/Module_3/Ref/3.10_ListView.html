@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>ReactJs</title>
+</head>
+
+<body>
+    <div class="question">
+        10. How to Create a List View in React Js ?
+    </div>
+
+        <div class="code">
+            <pre>
+function ListView() {
+    const items = ['Virat', 'Rohit', 'Dhoni']; 
+  
+    return (
+      &lt;ul&gt;
+        {items.map((item, index) => (
+          &lt;li key={index}>{item}&lt;/li&gt; 
+        ))}
+      &lt;/ul&gt;
+    );
+  } 
+export default ListView;
+                  
+            </pre>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="3.11_Counter.html">Next</a></button>
+    </div>
+</body>
+
+</html>

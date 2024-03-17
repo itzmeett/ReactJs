@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>ReactJs</title>
+</head>
+
+<body>
+    <div class="question">
+        11. Create Increment decrement state change by button click?
+    </div>
+
+        <div class="code">
+            <pre>
+import React, { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0); 
+
+  const handleIncrement = () => {
+    setCount(prevCount => currentCount + 1);
+  };
+
+  const handleDecrement = () => {
+    setCount(prevCount => currentCount - 1);
+  };
+
+  return (
+    &lt;div&gt;
+      &lt;p&gt;Count: {count}&lt;/p&gt;
+      &lt;button onClick={handleIncrement}>Increment&lt;/button&gt;
+      &lt;button onClick={handleDecrement}>Decrement&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default Counter;
+  
+            </pre>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="3.11_Counter.html">Next</a></button>
+    </div>
+</body>
+
+</html>

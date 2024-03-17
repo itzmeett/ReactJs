@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>ReactJs</title>
+</head>
+
+<body>
+    <div class="question">
+        9. How to change in components of React Js?
+    </div>
+    <div class="side">
+        <div class="answer">
+            <p>To change the state of the React component is useful when you are working on a single page application, it simply replaces the content of the existing component for the user without reloading the webpage. </p>
+            <p>We have to set initial state value inside constructor function and set click event handler of the element upon which click, results in changing state. </p>
+            <p> Then pass the function to the click handler and change the state of the component inside the function using setState.</p>
+        </div>
+        <div class="code-right code">
+            <pre>
+//The setState function used to change the state of the component directly or with the callback approach as mentioned below. 
+<strong>this.setState({ stateName : new-state-value})</strong>
+
+//Example:
+<strong>this.setState(st => {
+    st.stateName = new-state-value
+})</strong>
+            </pre>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="3.10_ListView.html">Next</a></button>
+    </div>
+</body>
+
+</html>
